@@ -34,7 +34,7 @@ const portfolioItems: PortfolioItemProps[] = [
     image: portfolio2,
     link: '/portfolio/nosh-kitchen',
   },
-  { 
+  {
     title: 'Joywaltzstudio Academy',
     image: portfolio3,
     link: '/portfolio/michelah-event',
@@ -71,8 +71,8 @@ function PortfolioItem({ title, image, link, className }: PortfolioItemProps) {
 
 export default function PortfolioSection() {
   return (
-    <section className='bg-blue-primary w-full py-16'>
-      <div className='container mx-auto px-4'>
+    <section className='bg-blue-primary w-full'>
+      <div className='container mx-auto px-4 py-16 md:px-8 lg:px-28'>
         <h2
           className={`${orbitron.className} mb-12 text-left text-5xl font-bold text-white`}
         >

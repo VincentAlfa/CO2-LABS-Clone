@@ -160,13 +160,13 @@ export default function Navbar({ className }: NavbarProps) {
         </Button>
       </div>
 
-      <button
+      <Button
         className='lg:hidden p-2 focus:outline-none'
         onClick={toggleMenu}
         aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
       >
         {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
+      </Button>
 
       {isMenuOpen && (
         <div className='lg:hidden fixed inset-0 top-[73px] bg-background z-40'>

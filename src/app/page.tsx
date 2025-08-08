@@ -1,10 +1,13 @@
-import OurService from '@/section/our-service/our-service';
+import {
+  AboutUsSection,
+  ContactSection,
+  HeroSection,
+  MethodologySection,
+  OurService,
+  PortfolioSection,
+  TeamSection,
+} from '@/section';
 import heroImage from '../../public/assets/heroimg.png';
-import HeroSection from '@/section/hero/hero';
-import Methodology from '@/section/methodology/methodology';
-import AboutUsSection from '@/section/about-us/about-us';
-import TeamSection from '@/section/team/team';
-import PortfolioSection from '@/section/portfolio/portfolio';
 
 export default function Home() {
   return (
@@ -17,10 +20,11 @@ export default function Home() {
           subtitle='Harnessing the power of our Coding Collective to build solutions for your business needs.'
         />
         <OurService />
-        <Methodology />
+        <MethodologySection />
         <AboutUsSection />
         <TeamSection />
         <PortfolioSection />
+        <ContactSection />
       </main>
     </div>
   );

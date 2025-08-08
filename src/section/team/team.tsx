@@ -72,7 +72,7 @@ export default function TeamSection({ className }: { className?: string }) {
   ];
 
   return (
-    <section className={cn('px-4 py-16 md:px-8 lg:px-12', className)}>
+    <section className={cn('px-4 md:px-8 py-16 lg:px-12', className)}>
       <div className='container mx-auto'>
         <h2
           className={`${orbitron.className} mb-12 text-left text-4xl font-bold md:text-5xl`}

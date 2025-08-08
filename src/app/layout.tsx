@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/navbar/navbar';
+import Footer from '@/components/footer/footer';
 
 const dmSans = DM_Sans({
   variable: '--font-dm-sans',
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={`${dmSans.className} bg-background-primary antialiased`}>
         <Navbar />
         <main className='pt-[73px]'>{children}</main>
+        <Footer />
       </body>
     </html>
   );
