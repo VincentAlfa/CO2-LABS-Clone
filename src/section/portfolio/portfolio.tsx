@@ -20,27 +20,27 @@ interface PortfolioItemProps {
 
 const portfolioItems: PortfolioItemProps[] = [
   {
-    title: 'Payment Gateway Platform',
+    title: 'AOTC Cosmetics',
     image: portfolio5,
     link: '/portfolio/payment-gateway',
   },
   {
-    title: 'AOTC Cosmetics',
+    title: 'Nosh Kitchen Website ',
     image: portfolio1,
     link: '/portfolio/aotc-cosmetics',
   },
   {
-    title: 'Nosh Kitchen Website',
+    title: 'Michelah Event Organizer Singapore',
     image: portfolio2,
     link: '/portfolio/nosh-kitchen',
   },
-  {
-    title: 'Michelah Event Organizer Singapore',
+  { 
+    title: 'Joywaltzstudio Academy',
     image: portfolio3,
     link: '/portfolio/michelah-event',
   },
   {
-    title: 'Little Pianist Explorer',
+    title: 'Octopay Payment',
     image: portfolio4,
     link: '/portfolio/pianist-explorer',
   },
@@ -51,7 +51,7 @@ function PortfolioItem({ title, image, link, className }: PortfolioItemProps) {
     <div
       className={cn('group flex h-full flex-col overflow-hidden', className)}
     >
-      <div className='relative h-48 w-56 overflow-hidden rounded-xl'>
+      <div className='relative h-52 w-56 overflow-hidden rounded-xl'>
         <Image
           src={image}
           alt={title}
@@ -61,7 +61,9 @@ function PortfolioItem({ title, image, link, className }: PortfolioItemProps) {
         />
       </div>
       <Link href={link} className='w-56'>
-        <h1 className='py-4 text-left text-xl text-white'>{title}</h1>
+        <h1 className='flex h-20 py-4 text-left text-xl font-medium text-white'>
+          {title}
+        </h1>
       </Link>
     </div>
   );
@@ -76,7 +78,7 @@ export default function PortfolioSection() {
         >
           Our Portfolio
         </h2>
-        <div className='mx-auto gap-12 flex max-w-6xl flex-wrap items-center justify-center bg-amber-400'>
+        <div className='mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-12'>
           {portfolioItems.map((item, index) => (
             <PortfolioItem
               key={index}
