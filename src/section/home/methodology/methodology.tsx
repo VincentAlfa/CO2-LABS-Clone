@@ -14,19 +14,19 @@ export default function Methodology() {
 
   return (
     <section
-      className='h-screen w-full px-4 py-16 md:px-8 lg:px-28'
+      className='w-full px-4 py-16 md:px-8 lg:px-28'
       ref={sectionRef}
       onMouseLeave={handleMouseLeaveSection}
     >
       <div className='container mx-auto'>
-        <div className='mb-16 text-center'>
+        <div className='mb-12 text-center'>
           <h1 className={`${orbitron.className} mb-4 text-5xl font-bold`}>
             ACE
           </h1>
           <h2 className='text-3xl'>Methodology for Strategic Consulting</h2>
         </div>
 
-        <div className='grid grid-cols-1 gap-4 md:grid-cols-3'>
+        <div className='grid grid-cols-1 gap-8 md:grid-cols-3'>
           <MethodologyItem
             id='assessment'
             title='Assessment'

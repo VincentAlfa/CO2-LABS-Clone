@@ -30,28 +30,28 @@ export default function HeroSection({
   return (
     <section
       className={cn(
-        'mt-24 flex h-screen w-full flex-col items-center justify-between py-8 pl-4 md:py-8 md:pl-8 lg:pl-28',
+        'mt-16 flex min-h-[90vh] w-full flex-col items-center justify-center px-4 py-6 md:mt-24 md:py-8 md:pl-8 lg:pl-28',
         className,
       )}
     >
       <div
-        className={`flex flex-col ${
+        className={`flex flex-col-reverse ${
           reversed ? 'lg:flex-row-reverse' : 'lg:flex-row'
-        } w-full items-center justify-between gap-8`}
+        } w-full items-center justify-between gap-12 md:gap-8`}
       >
-        <div className='animate-fade-right animate-once animate-duration-1000 animate-ease-out animate-fill-forwards my-8 flex w-full flex-col items-center space-y-3 text-center lg:my-0 lg:w-1/2 lg:items-start lg:text-left'>
+        <div className='animate-fade-right animate-once animate-duration-1000 animate-ease-out animate-fill-forwards mt-6 flex w-full flex-col items-center space-y-3 text-center md:my-8 lg:my-0 lg:w-1/2 lg:items-start lg:text-left'>
           <h1
-            className={`${orbitron.className} max-w-2xl text-5xl/5 leading-tight font-bold sm:text-6xl/15`}
+            className={`${orbitron.className} max-w-2xl text-4xl/5 leading-tight font-bold sm:text-5xl/10 md:text-6xl/15`}
           >
             Where Code Meets <br />
           </h1>
           <h1
-            className={`${orbitron.className} bg-blue-primary font-orbitron px-2 text-5xl/5 text-white sm:text-6xl/20`}
+            className={`${orbitron.className} bg-blue-primary font-orbitron px-2 text-4xl/5 text-white sm:text-5xl/10 md:text-6xl/20`}
           >
             Creativity
           </h1>
           {subtitle && typeof subtitle === 'string' ? (
-            <p className='max-w-2xl text-lg'>{subtitle}</p>
+            <p className='max-w-2xl text-base md:text-lg'>{subtitle}</p>
           ) : (
             subtitle
           )}
@@ -67,8 +67,10 @@ export default function HeroSection({
           </div>
         </div>
 
-        <div className='relative flex w-full justify-center lg:w-1/2'>
-          <div className={`absolute -top-32 right-0 z-0`}>
+        <div className='relative flex w-full justify-center pt-8 md:pt-0 lg:w-1/2'>
+          <div
+            className={`absolute -top-2 right-0 z-0 max-w-[200px] md:-top-32 md:max-w-full`}
+          >
             <Image
               src={heroBg}
               alt='Hero Background'
@@ -78,7 +80,7 @@ export default function HeroSection({
               priority
             />
           </div>
-          <div className='relative max-w-md'>
+          <div className='relative max-w-[250px] md:max-w-md'>
             <Image
               src={image}
               alt={imageAlt}

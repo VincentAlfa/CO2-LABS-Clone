@@ -35,13 +35,13 @@ export default function OurService() {
   ];
 
   return (
-    <section className='bg-blue-primary h-screen w-full px-20 py-20'>
+    <section className='bg-blue-primary w-full py-20 px-4 md:px-8 lg:px-20'>
       <div className='container mx-auto'>
         <h2 className={`${orbitron.className} mb-8 text-4xl font-bold text-white md:text-4xl lg:text-5xl`}>
           Our Services
         </h2>
 
-        <div className='animate-fade animate-once animate-duration-1000 animate-ease-out animate-fill-forwards grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4'>
+        <div className='animate-fade animate-once animate-duration-1000 animate-ease-out animate-fill-forwards grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4'>
           {services.map((service) => (
             <ServiceCard
               key={service.href}

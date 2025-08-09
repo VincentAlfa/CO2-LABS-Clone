@@ -24,11 +24,11 @@ export default function HeroService({
   return (
     <section
       className={cn(
-        'mt-24 flex w-full flex-col items-center justify-between py-8 pl-4 md:py-8 md:pl-8 lg:pl-28',
+        'mt-36 flex h-screen w-full flex-col items-center justify-between py-16 pl-4 md:py-8 md:pl-8 lg:pl-28',
         className,
       )}
     >
-      <div className='flex w-full flex-col items-center justify-between gap-8 lg:flex-row'>
+      <div className='flex w-full flex-col-reverse items-center justify-between gap-8 lg:flex-row'>
         <div className='animate-fade-right animate-once animate-duration-1000 animate-ease-out animate-fill-forwards relative my-8 flex w-full flex-col space-y-3 lg:my-0 lg:w-1/2 lg:items-start lg:pr-6'>
           <div>
             <Image

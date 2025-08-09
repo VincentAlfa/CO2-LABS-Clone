@@ -5,14 +5,17 @@ import teamImage from '../../../../public/assets/team.png';
 
 export default function AboutUsSection() {
   return (
-    <section className='relative h-screen w-full px-4 py-16 md:px-8 lg:px-12'>
+    <section
+      id='about-us'
+      className='relative h-screen w-full px-4 py-16 md:px-8 lg:px-12'
+    >
       <div className='flex flex-col items-center'>
         <div className='flex w-full flex-col items-center justify-between gap-8 md:gap-12 lg:flex-row'>
           <div className='h-full w-full lg:w-1/2 lg:text-left'>
-            <h1 className='mb-8 text-right text-5xl font-bold md:text-6xl'>
+            <h1 className='mb-8 text-center text-5xl font-bold md:text-right md:text-6xl'>
               About Us
             </h1>
-            <p className='text-right text-lg leading-relaxed md:text-2xl'>
+            <p className='text-center  md:text-right text-lg leading-relaxed md:text-2xl'>
               At CO2 Labs, we strive to provide simple yet powerful software
               solutions and expert consultation to help your business thrive in
               the digital world.

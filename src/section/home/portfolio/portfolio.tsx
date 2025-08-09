@@ -71,7 +71,7 @@ function PortfolioItem({ title, image, link, className }: PortfolioItemProps) {
 
 export default function PortfolioSection() {
   return (
-    <section className='bg-blue-primary w-full'>
+    <section id='portfolio' className='bg-blue-primary w-full scroll-smooth'>
       <div className='container mx-auto px-4 py-16 md:px-8 lg:px-28'>
         <h2
           className={`${orbitron.className} mb-12 text-left text-5xl font-bold text-white`}
