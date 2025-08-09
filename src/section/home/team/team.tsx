@@ -3,9 +3,9 @@
 import Image, { StaticImageData } from 'next/image';
 import { cn } from '@/lib/utils';
 import { orbitron } from '@/lib/font';
-import profile1 from '../../../public/assets/profile1.jpeg';
-import profile2 from '../../../public/assets/profile2.jpeg';
-import profile3 from '../../../public/assets/profile3.jpeg';
+import profile1 from '../../../../public/assets/profile1.jpeg';
+import profile2 from '../../../../public/assets/profile2.jpeg';
+import profile3 from '../../../../public/assets/profile3.jpeg';
 import { Card, CardContent } from '@/components/ui/card';
 
 interface TeamMemberProps {

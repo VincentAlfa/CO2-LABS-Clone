@@ -48,7 +48,7 @@ const NavLink = ({ href, label, onClick, hasDropdown }: NavLinkProps) => {
       icon: <SlidersHorizontal className='text-pink-400' size={36} />,
       title: 'Website Maintenance',
       description: 'Keep your website running smoothly and securely',
-      href: '/services/maintenance',
+      href: '/service/web-main',
     },
     {
       icon: <Code className='text-yellow-400' size={36} />,

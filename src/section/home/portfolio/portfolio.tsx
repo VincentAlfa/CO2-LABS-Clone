@@ -4,11 +4,11 @@ import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
-import portfolio1 from '../../../public/assets/portfolio-1.png';
-import portfolio2 from '../../../public/assets/portfolio-2.png';
-import portfolio3 from '../../../public/assets/portfolio-3.png';
-import portfolio4 from '../../../public/assets/portfolio-4.png';
-import portfolio5 from '../../../public/assets/portfolio.png';
+import portfolio1 from '../../../../public/assets/portfolio-1.png';
+import portfolio2 from '../../../../public/assets/portfolio-2.png';
+import portfolio3 from '../../../../public/assets/portfolio-3.png';
+import portfolio4 from '../../../../public/assets/portfolio-4.png';
+import portfolio5 from '../../../../public/assets/portfolio.png';
 import { orbitron } from '@/lib/font';
 
 interface PortfolioItemProps {

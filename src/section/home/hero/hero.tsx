@@ -5,7 +5,7 @@ import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
-import heroBg from '../../../public/assets/backdrop.png';
+import heroBg from '../../../../public/assets/backdrop.png';
 import { orbitron } from '@/lib/font';
 
 interface HeroSectionProps {
@@ -40,10 +40,14 @@ export default function HeroSection({
         } w-full items-center justify-between gap-8`}
       >
         <div className='animate-fade-right animate-once animate-duration-1000 animate-ease-out animate-fill-forwards my-8 flex w-full flex-col items-center space-y-3 text-center lg:my-0 lg:w-1/2 lg:items-start lg:text-left'>
-          <h1 className= {`${orbitron.className} max-w-2xl text-5xl/5 leading-tight font-bold sm:text-6xl/15`}>
+          <h1
+            className={`${orbitron.className} max-w-2xl text-5xl/5 leading-tight font-bold sm:text-6xl/15`}
+          >
             Where Code Meets <br />
           </h1>
-          <h1 className={`${orbitron.className} bg-blue-primary font-orbitron px-2 text-5xl/5 text-white sm:text-6xl/20`}>
+          <h1
+            className={`${orbitron.className} bg-blue-primary font-orbitron px-2 text-5xl/5 text-white sm:text-6xl/20`}
+          >
             Creativity
           </h1>
           {subtitle && typeof subtitle === 'string' ? (
@@ -68,8 +72,8 @@ export default function HeroSection({
             <Image
               src={heroBg}
               alt='Hero Background'
-              width={450}
-              height={200}
+              width={400}
+              height={100}
               className='object-cover'
               priority
             />
@@ -79,7 +83,7 @@ export default function HeroSection({
               src={image}
               alt={imageAlt}
               className='animate-fade-left animate-once animate-duration-1000 animate-ease-out animate-fill-forwards rounded-2xl object-contain'
-              width={500}
+              width={400}
               height={350}
               priority
             />

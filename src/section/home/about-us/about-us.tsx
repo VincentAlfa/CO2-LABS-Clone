@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import teamImage from '../../../public/assets/team.png';
+import teamImage from '../../../../public/assets/team.png';
 
 export default function AboutUsSection() {
   return (
